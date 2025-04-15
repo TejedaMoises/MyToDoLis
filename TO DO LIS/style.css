@@ -1,0 +1,198 @@
+/* style.css */
+:root {
+    --primary-color: #3498db;
+    --text-color: #333;
+    --light-text: #7f8c8d;
+    --divider-color: #ecf0f1;
+    --bg-color: #f5f5f5;
+    --white: #ffffff;
+    --border-radius: 0.5rem;
+    --box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 5%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .titulo {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .titulo h1 {
+    color: var(--text-color);
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+  
+  main {
+    flex: 1;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem;
+  }
+  
+  section h2 {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  section p {
+    color: var(--light-text);
+    font-size: 0.9rem;
+  }
+  
+  .divider {
+    height: 1px;
+    background: var(--divider-color);
+    margin: 1rem 0;
+    width: 100%;
+  }
+  
+  .add-task {
+    margin: 1rem 0;
+  }
+  
+  #todo-form {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  
+  #todo-input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid var(--divider-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+  }
+  
+  #todo-form button {
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: var(--border-radius);
+    width: 2.5rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #todo-form button:hover {
+    opacity: 0.9;
+  }
+  
+  h3 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .progress {
+    display: block;
+    color: var(--light-text);
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  #todo-list {
+    list-style: none;
+    width: 100%;
+  }
+  
+  #todo-list li {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--divider-color);
+  }
+  
+  #todo-list li:last-child {
+    border-bottom: none;
+  }
+  
+  #vacio {
+    text-align: center;
+    color: var(--light-text);
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: var(--light-text);
+    font-size: 0.8rem;
+  }
+  
+  /* Media Queries para ajustes específicos */
+  @media (max-width: 480px) {
+    body {
+      padding: 5% 3%;
+    }
+    
+    main {
+      padding: 1rem;
+    }
+    
+    #todo-form button {
+      width: 2.2rem;
+      font-size: 1.1rem;
+    }
+  }
+
+.boton:hover {
+    background-color: #45a049; /* Cambia el color al pasar el cursor */
+}
+
+.boton:active {
+    background-color: #388e3c; /* Cambio de color cuando el botón es presionado */
+}
+
+.boton:focus {
+    outline: none; /* Elimina el contorno cuando el botón está en foco */
+}
+
+/* Estilo para el botón de eliminar */
+.delete-btn {
+    padding: 5px 10px;
+    background-color: #f44336;  /* Rojo para eliminar */
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 3px;
+  }
+  
+  .delete-btn:hover {
+    background-color: #d32f2f;
+  }
+
+  .completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .edit-input {
+    width: 90%;
+    padding: 4px;
+    font-size: 1em;
+  }
+  

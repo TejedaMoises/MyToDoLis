@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+    <title>My to do list</title>
+</head>
+<body>
+    <header class="titulo">
+        <h1>This my to do LIST</h1>
+    </header>
+    <main>
+        <div class="class">
+        <section>
+            <h2>Tareas pendientes</h2>
+            <p>Organiza tus tareas</p>
+            
+        </section>
+
+        <div class="divider"></div>
+
+        <div class="add-task">
+        <form id="todo-form">
+            <input type="text" placeholder="Escribe la tarea" id="todo-input">
+            <button type="submit">+</button>
+        </form>
+    </div>
+
+    <div class="divider"></div>
+
+    <h3>Mis tareas</h3>
+    <span class="progress">0/0 completadas</span>
+            <ul id="todo-list"></ul>
+
+            <div id="vacio">
+                <p class="hiddent">No hay tareas pendientes</p>
+                <p class="hiddent">Añade una tarea para empezar</p>
+            </div>
+    </div>
+    </main>
+    
+    <footer>
+        <p>@ 2025 My app de tareas</p>
+        <p>Los colegas del barrio</p>
+    </footer>
+</body>
+</html>
