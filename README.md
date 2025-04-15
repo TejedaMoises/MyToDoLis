@@ -25,10 +25,3 @@ Este proyecto fue realizado con fines de práctica para reforzar conocimientos e
 
 ✅ Proyecto completo y funcional. Puede seguir mejorándose con nuevas funcionalidades como persistencia con LocalStorage o integración con base de datos.
 
-## 💼 Sobre mí
-
-Este proyecto forma parte de mi portafolio profesional. Está pensado para mostrar mis habilidades técnicas en desarrollo frontend a futuros empleadores.
-
----
-
-¡Gracias por visitar este repositorio!
